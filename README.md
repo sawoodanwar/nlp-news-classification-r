@@ -7,7 +7,7 @@
 
 ## Overview
 
-This repository provides a **supervised NLP text classification pipeline in R** for classifying news articles by **topic** (e.g., health, politics, economy) and **credibility** (credible vs. misleading). It uses the `tidymodels` ecosystem with `textrecipes` for text feature engineering and supports multiple classification algorithms.
+Supervised NLP text classification pipeline in R for classifying news articles by **topic** and **credibility** using `tidymodels` + `textrecipes`.
 
 ---
 
@@ -16,7 +16,7 @@ This repository provides a **supervised NLP text classification pipeline in R** 
 | Repository | Description |
 |---|---|
 | 🦠 [facebook-reactions-covid19-india](https://github.com/sawoodanwar/facebook-reactions-covid19-india) | PhD thesis project |
-| ⏱️ [timeseries-facebook-engagement-r](https://github.com/sawoodanwar/timeseries-facebook-engagement-r) | Time-series toolkit: general, COVID-19 extension & misinfo spike detection |
+| ⏱️ [timeseries-facebook-engagement-r](https://github.com/sawoodanwar/timeseries-facebook-engagement-r) | Time-series toolkit |
 | 🧠 [stm-social-media-r](https://github.com/sawoodanwar/stm-social-media-r) | STM topic modeling toolkit |
 | 💬 [sentiment-lexicon-comparison](https://github.com/sawoodanwar/sentiment-lexicon-comparison) | AFINN, Bing, NRC lexicon comparison |
 | 📊 [meta-content-analysis](https://github.com/sawoodanwar/meta-content-analysis) | Facebook & Instagram health misinformation analysis |
@@ -24,16 +24,9 @@ This repository provides a **supervised NLP text classification pipeline in R** 
 | 🔄 [cross-platform-engagement-analysis](https://github.com/sawoodanwar/cross-platform-engagement-analysis) | Unified cross-platform engagement framework |
 | 🔴 [disinformation-detection-ml](https://github.com/sawoodanwar/disinformation-detection-ml) | ML classifier for disinformation detection |
 | 🟢 [crowdtangle-meta-api-workflow](https://github.com/sawoodanwar/crowdtangle-meta-api-workflow) | Academic data collection pipeline |
-
----
-
-## Research Objectives
-
-- Classify news articles into predefined topic categories using supervised learning
-- Build a credibility classifier distinguishing reliable from misleading news
-- Apply TF-IDF and n-gram features with `textrecipes`
-- Compare classifiers: Logistic Regression, Random Forest, SVM
-- Evaluate with cross-validation: Accuracy, F1, AUC-ROC
+| 📊 [survey-data-analysis-r](https://github.com/sawoodanwar/survey-data-analysis-r) | Survey data cleaning, Likert analysis & descriptives |
+| 📝 [survey-scale-validation-r](https://github.com/sawoodanwar/survey-scale-validation-r) | Scale validation: EFA/CFA, Cronbach alpha, reliability |
+| 🧪 [survey-experiment-analysis-r](https://github.com/sawoodanwar/survey-experiment-analysis-r) | Survey experiment & vignette study analysis |
 
 ---
 
@@ -41,52 +34,24 @@ This repository provides a **supervised NLP text classification pipeline in R** 
 
 | Task | Labels | Method |
 |---|---|---|
-| **Topic classification** | Health, Politics, Economy, Science, Entertainment | Multi-class, LR / RF |
-| **Credibility classification** | Credible / Misleading | Binary, LR / SVM |
-
----
-
-## Repository Structure
-
-```
-nlp-news-classification-r/
-├── scripts/
-│   ├── 01_data_prep.R
-│   ├── 02_feature_engineering.R
-│   ├── 03_model_training.R
-│   ├── 04_evaluation.R
-│   └── 05_visualization.R
-├── data/README.md
-├── output/figures/
-├── output/tables/
-├── .gitignore
-├── README.md
-└── LICENSE
-```
-
----
+| **Topic** | Health, Politics, Economy, Science, Entertainment | Multi-class |
+| **Credibility** | Credible / Misleading | Binary |
 
 ## Requirements
 
 ```r
-install.packages(c(
-  "tidymodels", "textrecipes", "tidytext",
-  "ranger", "kernlab", "vip", "ggplot2", "yardstick"
-))
+install.packages(c("tidymodels", "textrecipes", "tidytext", "ranger", "kernlab", "vip", "ggplot2"))
 ```
 
 ---
 
 ## Author
 
-**Sawood Anwar** — PhD in Humanities (Text and Communication Sciences), University of Urbino Carlo Bo
-Defended: 22 September 2025 | Supervisor: Prof. Fabio Giglietto
+**Sawood Anwar** — PhD in Humanities, University of Urbino Carlo Bo | Defended: 22 September 2025
 
 - 🔗 [GitHub](https://github.com/sawoodanwar) | 💼 [LinkedIn](https://www.linkedin.com/in/sawood-anwar/) | 🎓 [Google Scholar](https://scholar.google.com/citations?hl=en&user=GgsMu3sAAAAJ)
 
----
-
 ## License
-MIT License. See [LICENSE](LICENSE).
+MIT License.
 
-*Keywords: Text Classification, NLP, tidymodels, textrecipes, News Credibility, Topic Classification, R, Supervised Learning, Computational Communication*
+*Keywords: Text Classification, NLP, tidymodels, News Credibility, R, Supervised Learning*
