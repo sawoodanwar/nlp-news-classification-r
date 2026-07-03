@@ -9,11 +9,21 @@
 
 This repository provides a **supervised NLP text classification pipeline in R** for classifying news articles by **topic** (e.g., health, politics, economy) and **credibility** (credible vs. misleading). It uses the `tidymodels` ecosystem with `textrecipes` for text feature engineering and supports multiple classification algorithms.
 
-> **Related Projects:**
-> - 🦠 [facebook-reactions-covid19-india](https://github.com/sawoodanwar/facebook-reactions-covid19-india) — PhD thesis
-> - 🧠 [stm-social-media-r](https://github.com/sawoodanwar/stm-social-media-r) — Topic modeling
-> - 🛨 [disinformation-detection-ml](https://github.com/sawoodanwar/disinformation-detection-ml) — ML disinformation classifier
-> - 💬 [sentiment-lexicon-comparison](https://github.com/sawoodanwar/sentiment-lexicon-comparison) — Sentiment toolkit
+---
+
+## 🔗 Related Projects
+
+| Repository | Description |
+|---|---|
+| 🦠 [facebook-reactions-covid19-india](https://github.com/sawoodanwar/facebook-reactions-covid19-india) | PhD thesis project |
+| ⏱️ [timeseries-facebook-engagement-r](https://github.com/sawoodanwar/timeseries-facebook-engagement-r) | Time-series toolkit: general, COVID-19 extension & misinfo spike detection |
+| 🧠 [stm-social-media-r](https://github.com/sawoodanwar/stm-social-media-r) | STM topic modeling toolkit |
+| 💬 [sentiment-lexicon-comparison](https://github.com/sawoodanwar/sentiment-lexicon-comparison) | AFINN, Bing, NRC lexicon comparison |
+| 📊 [meta-content-analysis](https://github.com/sawoodanwar/meta-content-analysis) | Facebook & Instagram health misinformation analysis |
+| 🗳️ [reddit-political-misinfo-coding](https://github.com/sawoodanwar/reddit-political-misinfo-coding) | Reddit political communication manual coding |
+| 🔄 [cross-platform-engagement-analysis](https://github.com/sawoodanwar/cross-platform-engagement-analysis) | Unified cross-platform engagement framework |
+| 🔴 [disinformation-detection-ml](https://github.com/sawoodanwar/disinformation-detection-ml) | ML classifier for disinformation detection |
+| 🟢 [crowdtangle-meta-api-workflow](https://github.com/sawoodanwar/crowdtangle-meta-api-workflow) | Academic data collection pipeline |
 
 ---
 
@@ -41,16 +51,14 @@ This repository provides a **supervised NLP text classification pipeline in R** 
 ```
 nlp-news-classification-r/
 ├── scripts/
-│   ├── 01_data_prep.R              # Load, clean, label encode
-│   ├── 02_feature_engineering.R    # TF-IDF, n-grams via textrecipes
-│   ├── 03_model_training.R         # tidymodels workflow: LR, RF, SVM
-│   ├── 04_evaluation.R             # CV metrics, confusion matrix, ROC
-│   └── 05_visualization.R          # Feature importance, ROC plots
-├── data/
-│   └── README.md
-├── output/
-│   ├── figures/
-│   └── tables/
+│   ├── 01_data_prep.R
+│   ├── 02_feature_engineering.R
+│   ├── 03_model_training.R
+│   ├── 04_evaluation.R
+│   └── 05_visualization.R
+├── data/README.md
+├── output/figures/
+├── output/tables/
 ├── .gitignore
 ├── README.md
 └── LICENSE
